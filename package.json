@@ -1,0 +1,20 @@
+{
+  "name": "hifi-plugin",
+  "version": "1.0.0",
+  "description": "Lo-Fi to Hi-Fi Figma plugin — Design System Scanner (Phase 1)",
+  "main": "code.js",
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --outfile=code.js --format=iife --target=es2017 && node scripts/inline-ui.js",
+    "build:ui": "node scripts/inline-ui.js",
+    "watch": "esbuild src/main.js --bundle --outfile=code.js --format=iife --target=es2017 --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@figma/plugin-typings": "^1.100.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
