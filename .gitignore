@@ -6,3 +6,8 @@ node_modules
 out/
 dist/
 code.js
+# Temporary verification artifacts
+temp-analysis/
+
+# VS Code
+.vscode/
